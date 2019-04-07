@@ -20,7 +20,7 @@ a {
     z-index: 3;
 }
 
-.container {
+.content {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -46,10 +46,7 @@ a {
     color: rgb(18, 60, 204);
 }
 
-.content {
+.container {
     padding-top: 100px;
     margin-left: 150px;
 }
-
-
-
