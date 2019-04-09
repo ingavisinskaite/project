@@ -1,43 +1,43 @@
 body {
-    background-color: rgb(18, 60, 204);
+    background-image: url("./image.png"), linear-gradient(127deg, rgb(18, 60, 204) 60%, rgb(217, 36, 48) 60%) ;
     color: white;
-    background-image: url("./image.jpg");
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 900px;
     padding-left: 150px;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
-a {
+.menu > ul > li > a {
     text-decoration: none;
     color: white;
 }
 
-a:hover {
-    text-decoration: none;
-    color: white;
+.menu > ul > li > a:hover {
+    border-bottom: 2px solid white; 
 }
 
 .container {
     text-align: center;
     padding-top: 20px;
     margin: 0 auto;
+    display: inline;
 }
 
 .menu-right {
     float: right;
-    margin: 10px;
 }
 
 .menu-right:hover {
     background-color: white;
+    padding: 5px;
+    border-radius: 4px;
     color: rgb(18, 60, 204);
 }
 
 .content {
     width: 30%;
-    padding-top: 50px;
+    padding-top: 70px;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -56,4 +56,96 @@ h1 {
     margin-left: 20px;
 }
 
+.dot:hover {
+    border: 3px solid rgb(253, 186, 0);
+}
 
+
+.btn {
+    margin-top: 50px;
+    color: white;
+    background-color:rgb(217, 36, 48);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+ .logo {
+     float: left; 
+     padding-top: 15px;
+}
+
+.menu > ul > li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.mobile > ul > li > a {
+    text-decoration: none;
+    color: rgb(18, 60, 204);
+    text-align: center;
+}
+
+.mobile > ul > li {
+    display: block;
+    padding: 5px;
+}
+
+.mobile > ul > li:hover {
+    background-color: rgba(228, 219, 219, 0.3)
+}
+
+.mobile > ul {
+    position: absolute;
+    background-color: white;
+    padding: 0;
+}
+
+.menu-button {
+    color: rgb(18, 60, 204);
+    background-color: rgb(228, 219, 219);
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+}
+
+.mobile {
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+}
+
+.menu {
+    display: inline-block;
+    position: absolute;
+}
+
+#signup {
+    background-color: white;
+    color: rgb(18, 60, 204);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.dropdown {
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
+@media only screen and (max-width: 1023px) {
+    .menu-button {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .mobile {
+        display: none;
+    }
+  }
