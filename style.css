@@ -1,11 +1,12 @@
 body {
     background-image: url("./image.png"), linear-gradient(127deg, rgb(18, 60, 204) 60%, rgb(217, 36, 48) 60%) ;
     color: white;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-left: 150px;
     font-family: 'Noto Sans TC', sans-serif;
+    height: 100vh;
 }
 
 .menu > ul > li > a {
@@ -13,31 +14,20 @@ body {
     color: white;
 }
 
-.menu > ul > li > a:hover {
+.menu > ul > li > a:hover:not(#signup) {
     border-bottom: 2px solid white; 
 }
 
-.container {
+.navbar {
     text-align: center;
-    padding-top: 20px;
     margin: 0 auto;
-    display: inline;
-}
-
-.menu-right {
-    float: right;
-}
-
-.menu-right:hover {
-    background-color: white;
-    padding: 5px;
-    border-radius: 4px;
-    color: rgb(18, 60, 204);
+    display: inline-flex;
+    flex-direction: row;
 }
 
 .content {
-    width: 30%;
-    padding-top: 70px;
+    padding-left: 100px;
+    padding-top: 20x;
     font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -51,13 +41,17 @@ h1 {
     width: 15px;
     background-color: #4162d6;
     border-radius: 50%;
-    display: inline-block;
-    margin-top: 100px;
-    margin-left: 20px;
+    display: inline-flex;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
 }
 
 .dot:hover {
     border: 3px solid rgb(253, 186, 0);
+    margin-top: 57px;
+    margin-left: 4px;
 }
 
 
@@ -73,11 +67,17 @@ h1 {
  .logo {
      float: left; 
      padding-top: 15px;
+     padding-left: 100px;
 }
 
 .menu > ul > li {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: row;
     margin: 0 15px;
+}
+
+.menu > ul {
+    margin: 7px 0;
 }
 
 .mobile > ul > li > a {
@@ -89,16 +89,18 @@ h1 {
 .mobile > ul > li {
     display: block;
     padding: 5px;
+    border: 1px solid rgb(18, 60, 204);
 }
 
 .mobile > ul > li:hover {
-    background-color: rgba(228, 219, 219, 0.3)
+    background-color: rgb(228, 219, 219)
 }
 
 .mobile > ul {
     position: absolute;
     background-color: white;
     padding: 0;
+    border-radius: 5px;
 }
 
 .menu-button {
@@ -107,6 +109,7 @@ h1 {
     border-radius: 5px;
     padding: 15px;
     position: relative;
+
 }
 
 .mobile {
@@ -115,16 +118,12 @@ h1 {
     margin-right: 50px;
 }
 
-.menu {
-    display: inline-block;
-    position: absolute;
-}
 
 #signup {
     background-color: white;
     color: rgb(18, 60, 204);
-    padding: 5px;
-    border-radius: 3px;
+    padding: 7px 20px;
+    border-radius: 4px;
 }
 
 .dropdown {
@@ -135,17 +134,44 @@ h1 {
     display: block;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 866px) {
     .menu-button {
         display: block;
     }
     .menu {
         display: none;
     }
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
   }
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 867px) {
     .mobile {
         display: none;
     }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
   }
+
+
+

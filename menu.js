@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    let contentNode = $("#menu-content");
+    let contentNode = $('#menu-content');
 
     showMenuItem = (itemName) => {
         let templateToFetch = `templates/${itemName}.html`;
@@ -8,8 +8,8 @@ $(document).ready(() => {
         })
     }
 
-    $("#nav-placeholder").load("templates/nav.html", () => {
-        $('.navbar').on("click", ".menu-link", (e) => {
+    $('#nav-placeholder').load('templates/nav.html', () => {
+        $('.navbar').on('click', '.menu-link', (e) => {
             let hrefTarget = (e.currentTarget.hash.slice(1));
             showMenuItem(hrefTarget);
         })
