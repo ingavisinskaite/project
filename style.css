@@ -9,6 +9,10 @@ body {
     height: 100vh;
 }
 
+.menu {
+    animation: menuMove 1s 1;
+}
+
 .menu > ul > li > a {
     text-decoration: none;
     color: white;
@@ -21,11 +25,10 @@ body {
 .navbar {
     text-align: center;
     margin: 0 auto;
-    display: inline-flex;
-    flex-direction: row;
 }
 
 .content {
+    width: 30%;
     padding-left: 100px;
     padding-top: 20x;
     font-family: 'Noto Sans TC', sans-serif;
@@ -76,9 +79,9 @@ h1 {
     margin: 0 15px;
 }
 
-.menu > ul {
+/* .menu > ul {
     margin: 7px 0;
-}
+} */
 
 .mobile > ul > li > a {
     text-decoration: none;
@@ -107,9 +110,9 @@ h1 {
     color: rgb(18, 60, 204);
     background-color: rgb(228, 219, 219);
     border-radius: 5px;
-    padding: 15px;
+    padding: 5px 20px;
     position: relative;
-
+    margin-top: 7px;
 }
 
 .mobile {
@@ -141,36 +144,43 @@ h1 {
     .menu {
         display: none;
     }
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+    .content {
+        padding-left: 30px;
+        width: 90%;
+        font-size: 12px;
+    }
+    .content > h1 {
+        font-size: 25px;
+        margin-top: 
+    }
+    .logo {
+        padding-left: 30px;
+    }
+    .btn {
+        padding: 5px;
+        margin-top: 30px;
+    }
+    .dot {
+        height: 8px;
+        width: 8px;
+        margin-top: 40px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    body {
+        background-image: linear-gradient(127deg, rgb(18, 60, 204) 60%, rgb(217, 36, 48) 60%);
+    }
   }
 
   @media only screen and (min-width: 867px) {
     .mobile {
         display: none;
     }
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+  }
+
+  @keyframes menuMove {
+        from{margin-top: -20px;}
+        to{margin-top: 0;}
   }
 
 
