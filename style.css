@@ -16,6 +16,7 @@ body {
 .menu > ul > li > a {
     text-decoration: none;
     color: white;
+    text-transform: uppercase;
 }
 
 .menu > ul > li > a:hover:not(#signup) {
@@ -38,26 +39,19 @@ h1 {
     font-weight: 900;
     letter-spacing: 2px;
 }
-
 .dot {
-    height: 15px;
-    width: 15px;
-    background-color: #4162d6;
-    border-radius: 50%;
-    display: inline-flex;
-    margin-top: 60px;
-    margin-left: 10px;
-    margin-right: 10px;
-    position: relative;
+    height: 10px;
+    width: 10px;
+    margin-top: 40px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
-
-.dot:hover {
+.dot:hover{
     border: 3px solid rgb(253, 186, 0);
     margin-top: 57px;
     margin-left: 4px;
+    margin-top: 37px;
 }
-
-
 .btn {
     margin-top: 50px;
     color: white;
@@ -69,8 +63,12 @@ h1 {
 
  .logo {
      float: left; 
-     padding-top: 15px;
      padding-left: 100px;
+     width: 40px;
+}
+
+.logo > img {
+    margin-right: 10px;
 }
 
 .menu > ul > li {
@@ -116,8 +114,7 @@ h1 {
 }
 
 .mobile {
-    display: inline-block;
-    float: right;
+    display: inline-flex;
     margin-right: 50px;
 }
 
@@ -137,24 +134,34 @@ h1 {
     display: block;
 }
 
-@media only screen and (max-width: 866px) {
+@media only screen and (max-width: 375px) {
     .menu-button {
         display: block;
+        position: relative;
     }
     .menu {
-        display: none;
+            display: none;
+        }
+    .mobile > ul {
+        position: absolute;
+        margin-top: 45px;
     }
     .content {
         padding-left: 30px;
-        width: 90%;
+        width: 85%;
         font-size: 12px;
+        margin-top: 40px;
     }
     .content > h1 {
         font-size: 25px;
-        margin-top: 
     }
     .logo {
         padding-left: 30px;
+        padding-top: 10px;
+    }
+    .logo > img {
+        width: 80px;
+        height: 20px;
     }
     .btn {
         padding: 5px;
@@ -167,20 +174,136 @@ h1 {
         margin-left: 7px;
         margin-right: 7px;
     }
+    .dot:hover{
+        border: 3px solid rgb(253, 186, 0);
+        margin-top: 57px;
+        margin-left: 4px;
+        margin-top: 37px;
+    }
     body {
         background-image: linear-gradient(127deg, rgb(18, 60, 204) 60%, rgb(217, 36, 48) 60%);
     }
   }
 
-  @media only screen and (min-width: 867px) {
+  @media only screen and (min-width: 376px) {
     .mobile {
+        display: inline-flex;
+    }
+    .menu {
         display: none;
+    }
+    body {
+        background-image: linear-gradient(127deg, rgb(18, 60, 204) 60%, rgb(217, 36, 48) 60%);
+    }
+    .content {
+        padding-left: 50px;
+        width: 60%;
+        margin-top: 50px;
+        font-size: 13px;
+    }
+    .mobile > ul {
+        margin-top: 45px;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .logo > img {
+        width: 90px;
+        height: 25px;
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin-top: 40px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    .dot:hover{
+        border: 3px solid rgb(253, 186, 0);
+        margin-top: 57px;
+        margin-left: 4px;
+        margin-top: 37px;
     }
   }
 
+  @media only screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+    .menu {
+        display: block;
+        font-size: 12px;
+    }
+    .content {
+        padding-left: 60px;
+    }
+    body {
+        background-image: url("./image.png"), linear-gradient(127deg, rgb(18, 60, 204) 60%, rgb(217, 36, 48) 60%) ; 
+    }
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin-top: 40px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    .dot:hover{
+        border: 3px solid rgb(253, 186, 0);
+        margin-top: 57px;
+        margin-left: 4px;
+        margin-top: 37px;
+    }
+    .logo > img {
+        padding-top: 5px;
+    }
+}
+
+
+  @media only screen and (min-width: 1024px) {
+    .mobile {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .content {
+        width: 40%
+    }
+    .dot {
+        height: 15px;
+        width: 15px;
+        background-color: #4162d6;
+        border-radius: 50%;
+        display: inline-flex;
+        margin-top: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+    }
+    
+    .dot:hover {
+        border: 3px solid rgb(253, 186, 0);
+        margin-top: 57px;
+        margin-left: 4px;
+    }
+    .logo > img {
+        width: 120px;
+        height: 30px;
+        margin-left: 30px;
+        padding-top: 3px;
+    }
+
+  }
+
   @keyframes menuMove {
-        from{margin-top: -20px;}
-        to{margin-top: 0;}
+        from{
+            margin-top: -20px;
+        }
+        to{
+            margin-top: 0;
+        }
   }
 
 
