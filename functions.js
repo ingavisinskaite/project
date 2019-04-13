@@ -1,3 +1,3 @@
 function dropdown () {
-    document.querySelector('.dropdown').classList.toggle('display')
+    document.getElementsByClassName('dropdown')[0].classList.toggle('display')
 }

@@ -118,8 +118,7 @@ h1 {
     margin-right: 50px;
 }
 
-
-#signup {
+div:not(.mobile) #signup {
     background-color: white;
     color: rgb(18, 60, 204);
     padding: 7px 20px;
@@ -267,6 +266,7 @@ h1 {
     }
     .menu {
         display: block;
+        font-size: 16px;
     }
     .content {
         width: 40%
