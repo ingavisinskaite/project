@@ -1,43 +1,48 @@
 // KAIP REIKĖS DARYTI TOLIAU PAVYZDYS
-// function getBody(){
-//     document.body.appendChild(getLogoImage());
-// }
+function getDOM(){
+    const header = getHeader();
+    header.appendChild(getLogo());
+    header.appendChild(getDesktopMenu());
+    header.appendChild(getMobileMenu());
+    document.body.appendChild(header);
 
-// function getLogoImage(){
-//     let image = document.createElement('img');
-//     image.className = 'logo';
-//     image.src = 'logo.jpg';
-//     image.alt = 'logo';
-//     return image;
-// }
-
-function getDOM() {
-    getHeader();
-    getHome();
+    const menuContentDiv = getMenuContentDiv();
+    menuContentDiv.appendChild(getContentHeader());
+    menuContentDiv.appendChild(getContentParagraph());
+    menuContentDiv.appendChild(getContentSecondParagraph());
+    menuContentDiv.appendChild(getCreateDesignButton());
+    menuContentDiv.appendChild(getDots());
+    document.body.appendChild(menuContentDiv);
 }
 
-//Import header HTML
-
 function getHeader() {
-    let navBar = document.createElement('div');
-    navBar.id = 'nav-placeholder'
     let header = document.createElement('header');
     header.classList = 'navbar';
-    navBar.appendChild(header);
-    document.body.appendChild(navBar);
-    getLogo();
-    getMenu();
-    getMobileMenu();
-    
+    return header;
 }
 
 function getLogo() {
-    let div = document.createElement('div');
-    div.classList = 'logo';
+    let logoParentDiv = document.createElement('div');
+    logoParentDiv.classList = 'logo';
     let image = document.createElement('img');
     image.src = './logo.jpg';
-    div.appendChild(image);
-    document.getElementsByClassName('navbar')[0].appendChild(div);
+    logoParentDiv.appendChild(image);
+    return logoParentDiv;
+}
+
+function getDesktopMenu() {
+    let menuParentDiv = document.createElement('div');
+    menuParentDiv.className = 'menu desktop';
+    let ul = document.createElement('ul');
+    ul.className = 'desktop-menu'
+    menuParentDiv.appendChild(ul);
+    
+    const menuItems = ['Home', 'Products', 'Templates', 'Pricing', 'SIGNIN', 'SIGNUP'];
+    for (let i = 0; i < menuItems.length; i++) {
+        ul.appendChild(getMenuItem(menuItems, i));
+    }    
+
+    return menuParentDiv;
 }
 
 function getMobileMenu() {
@@ -51,19 +56,29 @@ function getMobileMenu() {
     menuListUl.className = 'dropdown';
     mobileDiv.appendChild(menuListUl);
     mobileDiv.appendChild(menuButtonDiv);
-    document.getElementsByClassName('navbar')[0].appendChild(mobileDiv);
-    getMenuItems('dropdown')
+
+    const menuItems = ['Home', 'Products', 'Templates', 'Pricing', 'SIGNIN', 'SIGNUP'];
+    for (let i = 0; i < menuItems.length; i++) {
+        let item = getMenuItem(menuItems, i);
+        menuListUl.appendChild(item);
+    } 
+
+    return mobileDiv;
 }
 
-function getMenu() {
-    let div = document.createElement('div');
-    div.className = 'menu desktop';
-    let ul = document.createElement('ul');
-    ul.className = 'desktop-menu'
-    div.appendChild(ul);
-    document.getElementsByClassName('navbar')[0].appendChild(div);
-    getMenuItems('desktop-menu');
-}
+function getMenuItem(menuItems, index) {
+    let li = document.createElement('li'); 
+    let a = document.createElement('a');
+    a.href = '#';
+    a.className = 'menu-link';
+    if (menuItems[index] === 'SIGNIN' || menuItems[index] === 'SIGNUP') {
+        a.classList.add('menu-right');
+        a.id = menuItems[index].toLowerCase();
+    }
+    a.innerHTML = menuItems[index];
+    li.appendChild(a);
+    return li;
+} 
 
 function getMenuItems(menuClass) {
     const menuItems = ['Home', 'Products', 'Templates', 'Pricing', 'SIGNIN', 'SIGNUP'];
@@ -82,43 +97,54 @@ function getMenuItems(menuClass) {
     }
 }
 
-//Import Home HTML
-
-function getHome() {
+function getMenuContentDiv() {
     let div = document.createElement('div');
     div.classList = 'content';
     div.id = 'menu-content';
-    document.body.appendChild(div);
-    getBody();
+    return div;
 }
 
-function getBody() {
+function getContentHeader() {
     let h1 = document.createElement('h1');
     h1.innerHTML = 'Create Stunning Visual Media';
+    return h1;
+}
+
+function getContentParagraph() {
     let p1 = document.createElement('p');
     p1.innerHTML = 'Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites.';
+    return p1;
+}
+
+function getContentSecondParagraph() {
     let p2 = document.createElement('p');
     p2.innerHTML = 'Make your project stand out!';
+    return p2;
+}
+
+function getCreateDesignButton() {
     let button = document.createElement('button');
     button.className = 'btn';
-    button.innerHTML = 'Create design';
+    button.innerHTML = 'Create design ';
     let i = document.createElement('i');
     i.className = 'fas fa-arrow-right';
     button.appendChild(i);
-    document.getElementById('menu-content').appendChild(h1);
-    document.getElementById('menu-content').appendChild(p1);
-    document.getElementById('menu-content').appendChild(p2);
-    document.getElementById('menu-content').appendChild(button);
+    return button;
 }
 
 function getDots() {
-    let div = document.createElement('div');
-    div.id = 'dots';
+    let dotsParentDiv = document.createElement('div');
+    dotsParentDiv.id = 'dots';
     for(let i = 0; i < 4; i++){
-        let div1 = document.createElement('div')
-        div1.className = 'dot';
-        div.appendChild('div1');
+        dotsParentDiv.appendChild(getDot());
     }
+    return dotsParentDiv;
+}
+
+function getDot() {
+    let dot = document.createElement('div');
+    dot.className = 'dot';
+    return dot;
 }
 
 ////////////////////////////////////////////////////
