@@ -1,4 +1,3 @@
-// KAIP REIKĖS DARYTI TOLIAU PAVYZDYS
 function getDOM(){
     const header = getHeader();
     header.appendChild(getLogo());
@@ -13,11 +12,27 @@ function getDOM(){
     menuContentDiv.appendChild(getCreateDesignButton());
     menuContentDiv.appendChild(getDots());
     document.body.appendChild(menuContentDiv);
+
+    createStyleRules();
+}
+
+
+let isMenu = false;
+
+function showMenu() {
+    if (!isMenu) {
+        document.getElementsByClassName('dropdown')[0].style.display = 'block';
+    } else {
+        document.getElementsByClassName('dropdown')[0].style.display = 'none';
+    }
+    isMenu = !isMenu;
 }
 
 function getHeader() {
     let header = document.createElement('header');
     header.classList = 'navbar';
+    header.style.textAlign = "center";
+    header.style.margin = "0 auto";
     return header;
 }
 
@@ -50,7 +65,7 @@ function getMobileMenu() {
     mobileDiv.className = 'mobile';
     let menuButtonDiv = document.createElement('div');
     menuButtonDiv.className = 'menu-button';
-    menuButtonDiv.onclick = function() { dropdown() };
+    menuButtonDiv.onclick = function() { showMenu() };
     menuButtonDiv.innerHTML = 'MENU';
     let menuListUl = document.createElement('ul');
     menuListUl.className = 'dropdown';
