@@ -184,4 +184,57 @@ function closeMenu(){
     })
 }
 
+//ADDING JSON
+function getElement(elObject){
+    let element = document.createElement(elObject.type)
+    if(elObject.id === 'string'){
+        element.id = elObject.id;
+    }
+    if(elObject.className === 'string'){
+        element.className = elObject.className;
+    }
+    if(elObject.src === 'string'){
+        element.src = elObject.src;
+    }
+    if(elObject.href === 'string'){
+        element.href = elObject.href;
+    }
+    if(elObject.innerHTML === 'string'){
+        element.innerHTML = elObject.innerHTML;
+    }
+    if(elObject.onclick === 'string'){
+        element.onclick = elObject.onclick;
+    }
+    return element
+}
 
+function recurseJSON(data){
+    for (let el of data.content){
+        if(typeof el.content === 'object'){
+            recurseJSON(el);
+        }
+    } else {
+        //nothing
+    }
+}
+
+function loadJSON(callback) {
+    var req = new XMLHttpRequest();
+    req.overrideMimeType('application/json');
+    req.open('GET', 'https://api.myjson.com/bins/fwua0', true); 
+    req.onreadystatechange = 
+    function() {
+        if (req.readyState == 4 && req.status == "200") {
+            callback(req.responseText);
+        }
+    };
+    req.send(null);  
+}
+
+function initJSON() {
+    loadJSON(function(res) {
+        recurseJSON(JSON.parse(res));
+    });
+}
+
+initJSON();
