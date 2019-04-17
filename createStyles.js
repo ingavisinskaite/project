@@ -22,11 +22,11 @@ function applyMenuStyleRules(sheet) {
     sheet.insertRule('.menu {animation: menuMove 1s 1;}');
     sheet.insertRule('.menu > ul > li > a:hover:not(#signup) {border-bottom: 2px solid white; }');
     sheet.insertRule('.menu > ul > li {display: inline-flex; margin: 0 15px;}');
-    sheet.insertRule('div:not(.mobile).selected {border-bottom: 2px solid white;}');
-    sheet.insertRule('div:not(.mobile)#signup {background-color: white; color: rgb(18, 60, 204); padding: 7px 20px; border-radius: 4px;}');
+    sheet.insertRule('.selected {border-bottom: 2px solid white;}');
+    sheet.insertRule('#signup {background-color: white; color: rgb(18, 60, 204); padding: 7px 20px; border-radius: 4px;}');
     sheet.insertRule(' .logo {float: left; width: 40px;}');
     sheet.insertRule('.logo > img {cursor: pointer;}');
-
+    sheet.insertRule('.navbar {text-align: center; margin: 0 auto;}')
 }
 
 function applyMobileMenuStyleRules(sheet) {

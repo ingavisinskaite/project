@@ -41,10 +41,6 @@ function getContainer(){
 function getHeader() {
     let header = document.createElement('header');
     header.className = 'navbar';
-    //perkelti į createStyle
-    header.style.textAlign = "center";
-    header.style.margin = "0 auto";
-    ///////////////////
     return header;
 }
 

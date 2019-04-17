@@ -135,7 +135,6 @@
                         "href": "#",
                         "className": "menu-link menu-right",
                         "innerHTML": "SIGNIN",
-                        "id": "signin"
                     }] 
                 },
                 {
@@ -144,8 +143,7 @@
                         "type": "a",
                         "href": "#",
                         "className": "menu-link menu-right",
-                        "innerHTML": "SIGNUP",
-                        "id": "signup"
+                        "innerHTML": "SIGNUP"
                     }] 
                 }]
             }]
