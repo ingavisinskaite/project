@@ -1,0 +1,200 @@
+{   
+    "type": "div",
+    "className": "container",
+    "content":[{
+        "type": "header",
+        "className": "navbar",
+        "content": [{
+            "type": "div",
+            "className": "logo",
+            "content": [{
+                "type": "img",
+                "src": "./logo.jpg"
+            }]
+        },
+        {
+            "type": "div",
+            "className": "menu desktop",
+            "content": [{
+                "type": "ul",
+                "className": "desktop-menu",
+                "content": [{
+                    "type": "li",
+                    "content": [{
+                        "type": "a",
+                        "href": "#",
+                        "className": "menu-link selected",
+                        "innerHTML": "Home"
+                    }]
+                },
+                {
+                    "type": "li",
+                    "content": [{
+                        "type": "a",
+                        "href": "#",
+                        "className": "menu-link",
+                        "innerHTML": "Products"
+                    }]
+                },
+                {
+                    "type": "li",
+                    "content": [{
+                        "type": "a",
+                        "href": "#",
+                        "className": "menu-link",
+                        "innerHTML": "Templates"
+                    }] 
+                },
+                {
+                    "type": "li",
+                    "content": [{
+                        "type": "a",
+                        "href": "#",
+                        "className": "menu-link",
+                        "innerHTML": "Pricing"
+                    }] 
+                },
+                {
+                    "type": "li",
+                    "content": [{
+                        "type": "a",
+                        "href": "#",
+                        "className": "menu-link menu-right",
+                        "innerHTML": "SIGNIN",
+                        "id": "signin"
+                    }] 
+                },
+                {
+                    "type": "li",
+                    "content": [{
+                        "type": "a",
+                        "href": "#",
+                        "className": "menu-link menu-right",
+                        "innerHTML": "SIGNUP",
+                        "id": "signup"
+                    }] 
+                }]
+            }]
+
+        },
+        {
+            "type": "div",
+            "className": "mobile",
+            "content": [{
+                "type": "div",
+                "className": "menu-button",
+                "onclick": "showMenu",
+                "content": [{
+                    "type": "i",
+                    "className": "fas fa-align-justify"
+                }]
+            },
+            {
+                "type": "ul",
+                "className": "dropdown",
+                "content": [{
+                    "type": "li",
+                    "content": [{
+                        "type": "a",
+                        "href": "#",
+                        "className": "menu-link",
+                        "innerHTML": "Home"
+                    }]
+                },
+                {
+                    "type": "li",
+                    "content": [{
+                        "type": "a",
+                        "href": "#",
+                        "className": "menu-link",
+                        "innerHTML": "Products"
+                    }]
+                },
+                {
+                    "type": "li",
+                    "content": [{
+                        "type": "a",
+                        "href": "#",
+                        "className": "menu-link",
+                        "innerHTML": "Templates"
+                    }] 
+                },
+                {
+                    "type": "li",
+                    "content": [{
+                        "type": "a",
+                        "href": "#",
+                        "className": "menu-link",
+                        "innerHTML": "Pricing"
+                    }] 
+                },
+                {
+                    "type": "li",
+                    "content": [{
+                        "type": "a",
+                        "href": "#",
+                        "className": "menu-link menu-right",
+                        "innerHTML": "SIGNIN",
+                        "id": "signin"
+                    }] 
+                },
+                {
+                    "type": "li",
+                    "content": [{
+                        "type": "a",
+                        "href": "#",
+                        "className": "menu-link menu-right",
+                        "innerHTML": "SIGNUP",
+                        "id": "signup"
+                    }] 
+                }]
+            }]
+        }]
+    },
+    {
+        "type": "div",
+        "className": "content",
+        "id": "menu-content",
+        "content": [{
+            "type": "h1",
+            "innerHTML": "Create Stunning Visual Media"
+        },
+        {
+            "type": "p",
+            "innerHTML": "Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites."
+        },
+        {
+            "type": "p",
+            "innerHTML": "Make your project stand out!"
+        },
+        {
+            "type": "button",
+            "className": "btn",
+            "innerHTML": "Create design ",
+            "content": [{
+                "type": "i",
+                "className": "fas fa-arrow-right"
+            }]
+        },
+        {
+            "type": "div",
+            "className": "dots",
+            "content": [{
+                "type": "div",
+                "className": "dot selected-dot"
+            },
+            {
+                "type": "div",
+                "className": "dot"
+            },
+            {
+                "type": "div",
+                "className": "dot"
+            },
+            {
+                "type": "div",
+                "className": "dot"
+            }]
+        }]
+    }]  
+}

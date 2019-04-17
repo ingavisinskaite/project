@@ -1,9 +1,21 @@
+"use strict";
+
+const content = {
+    "menu": ["Home", "Products", "Templates", "Pricing", "SIGNIN", "SIGNUP"],
+    "p1": "Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites.",
+    "p2": "Make your project stand out!",
+    "h1": "Create Stunning Visual Media",
+    "createButton": "Create design ",
+};
+
+let contentJSON = JSON.stringify(content);
+
 function getDOM(){
+
     const header = getHeader();
     header.appendChild(getLogo());
     header.appendChild(getDesktopMenu());
     header.appendChild(getMobileMenu());
-    document.body.appendChild(header);
 
     const menuContentDiv = getMenuContentDiv();
     menuContentDiv.appendChild(getContentHeader());
@@ -11,34 +23,34 @@ function getDOM(){
     menuContentDiv.appendChild(getContentSecondParagraph());
     menuContentDiv.appendChild(getCreateDesignButton());
     menuContentDiv.appendChild(getDots());
-    document.body.appendChild(menuContentDiv);
+
+    const container = getContainer();
+    container.appendChild(header);
+    container.appendChild(menuContentDiv);
+    document.body.appendChild(container);
 
     createStyleRules();
 }
 
-
-let isMenu = false;
-
-function showMenu() {
-    if (!isMenu) {
-        document.getElementsByClassName('dropdown')[0].style.display = 'block';
-    } else {
-        document.getElementsByClassName('dropdown')[0].style.display = 'none';
-    }
-    isMenu = !isMenu;
+function getContainer(){
+    let container = document.createElement('div');
+    container.className = 'container';
+    return container
 }
 
 function getHeader() {
     let header = document.createElement('header');
-    header.classList = 'navbar';
+    header.className = 'navbar';
+    //perkelti į createStyle
     header.style.textAlign = "center";
     header.style.margin = "0 auto";
+    ///////////////////
     return header;
 }
 
 function getLogo() {
     let logoParentDiv = document.createElement('div');
-    logoParentDiv.classList = 'logo';
+    logoParentDiv.className = 'logo';
     let image = document.createElement('img');
     image.src = './logo.jpg';
     logoParentDiv.appendChild(image);
@@ -52,7 +64,7 @@ function getDesktopMenu() {
     ul.className = 'desktop-menu'
     menuParentDiv.appendChild(ul);
     
-    const menuItems = ['Home', 'Products', 'Templates', 'Pricing', 'SIGNIN', 'SIGNUP'];
+    const menuItems = JSON.parse(contentJSON).menu;
     for (let i = 0; i < menuItems.length; i++) {
         ul.appendChild(getMenuItem(menuItems, i));
     }    
@@ -65,14 +77,16 @@ function getMobileMenu() {
     mobileDiv.className = 'mobile';
     let menuButtonDiv = document.createElement('div');
     menuButtonDiv.className = 'menu-button';
-    menuButtonDiv.onclick = function() { showMenu() };
-    menuButtonDiv.innerHTML = 'MENU';
+    menuButtonDiv.onclick = function() { showMenu() }; 
+    let menuSymbol = document.createElement('i');
+    menuSymbol.className = 'fas fa-align-justify';
+    menuButtonDiv.appendChild(menuSymbol);
     let menuListUl = document.createElement('ul');
     menuListUl.className = 'dropdown';
     mobileDiv.appendChild(menuListUl);
     mobileDiv.appendChild(menuButtonDiv);
 
-    const menuItems = ['Home', 'Products', 'Templates', 'Pricing', 'SIGNIN', 'SIGNUP'];
+    const menuItems = JSON.parse(contentJSON).menu;
     for (let i = 0; i < menuItems.length; i++) {
         let item = getMenuItem(menuItems, i);
         menuListUl.appendChild(item);
@@ -86,7 +100,10 @@ function getMenuItem(menuItems, index) {
     let a = document.createElement('a');
     a.href = '#';
     a.className = 'menu-link';
-    if (menuItems[index] === 'SIGNIN' || menuItems[index] === 'SIGNUP') {
+    if(menuItems[index] == JSON.parse(contentJSON).menu[0]){
+        a.classList.add('selected')
+    }
+    if (menuItems[index] == JSON.parse(contentJSON).menu[4] || menuItems[index] == JSON.parse(contentJSON).menu[5]) {
         a.classList.add('menu-right');
         a.id = menuItems[index].toLowerCase();
     }
@@ -94,23 +111,6 @@ function getMenuItem(menuItems, index) {
     li.appendChild(a);
     return li;
 } 
-
-function getMenuItems(menuClass) {
-    const menuItems = ['Home', 'Products', 'Templates', 'Pricing', 'SIGNIN', 'SIGNUP'];
-    for(let i = 0; i < menuItems.length; i++){
-        let li = document.createElement('li'); 
-        let a = document.createElement('a');
-        a.href= '#';
-        a.className = 'menu-link';
-        if (menuItems[i] === 'SIGNIN' || menuItems[i] === 'SIGNUP') {
-            a.classList.add('menu-right');
-            a.id = menuItems[i].toLowerCase();
-        }
-        a.innerHTML = menuItems[i];
-        li.appendChild(a);
-        document.getElementsByClassName(menuClass)[0].appendChild(li);
-    }
-}
 
 function getMenuContentDiv() {
     let div = document.createElement('div');
@@ -121,26 +121,26 @@ function getMenuContentDiv() {
 
 function getContentHeader() {
     let h1 = document.createElement('h1');
-    h1.innerHTML = 'Create Stunning Visual Media';
+    h1.innerHTML = JSON.parse(contentJSON).h1;
     return h1;
 }
 
 function getContentParagraph() {
     let p1 = document.createElement('p');
-    p1.innerHTML = 'Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites.';
+    p1.innerHTML = JSON.parse(contentJSON).p1;
     return p1;
 }
 
 function getContentSecondParagraph() {
     let p2 = document.createElement('p');
-    p2.innerHTML = 'Make your project stand out!';
+    p2.innerHTML = JSON.parse(contentJSON).p2;
     return p2;
 }
 
 function getCreateDesignButton() {
     let button = document.createElement('button');
     button.className = 'btn';
-    button.innerHTML = 'Create design ';
+    button.innerHTML = JSON.parse(contentJSON).createButton;
     let i = document.createElement('i');
     i.className = 'fas fa-arrow-right';
     button.appendChild(i);
@@ -151,7 +151,13 @@ function getDots() {
     let dotsParentDiv = document.createElement('div');
     dotsParentDiv.id = 'dots';
     for(let i = 0; i < 4; i++){
-        dotsParentDiv.appendChild(getDot());
+        if(i === 0){
+            let selectedDot = getDot();
+            selectedDot.classList.add('selected-dot');
+            dotsParentDiv.appendChild(selectedDot);
+        } else {
+            dotsParentDiv.appendChild(getDot());
+        }
     }
     return dotsParentDiv;
 }
@@ -162,5 +168,24 @@ function getDot() {
     return dot;
 }
 
-////////////////////////////////////////////////////
+let isMenu = false;
+
+function showMenu() {
+    if (!isMenu) {
+        document.getElementsByClassName('dropdown')[0].style.display = 'block';
+        closeMenu();
+    } else {
+        document.getElementsByClassName('dropdown')[0].style.display = 'none';
+    }
+    isMenu = !isMenu;
+    
+}
+
+function closeMenu(){
+    document.getElementsByClassName('content')[0].addEventListener('click', function(){
+        document.getElementsByClassName('dropdown')[0].style.display = 'none';
+        isMenu = !isMenu;
+    })
+}
+
 
