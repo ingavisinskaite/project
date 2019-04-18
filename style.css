@@ -1,4 +1,4 @@
-/* body {
+body {
     background-image: url("./image.png"), linear-gradient(127deg, rgb(18, 60, 204) 60%, rgb(217, 36, 48) 60%) ;
     color: white;
     background-size: contain;
@@ -38,7 +38,7 @@ div:not(.mobile) .selected {
 
 .mobile {
     display: inline-flex;
-    margin-right: 50px;
+    margin-right: 70px;
     float: right;
 }
 
@@ -46,9 +46,10 @@ div:not(.mobile) .selected {
     color: white;
     background-color: #ff5969;
     border-radius: 5px;
-    padding: 5px 20px;
+    padding: 5px 25px;
     position: relative;
     margin-top: 7px;
+    cursor: pointer;
 }
 
 .mobile > ul {
@@ -63,6 +64,7 @@ div:not(.mobile) .selected {
     padding: 8px;
     margin: 2px 0;
     border-radius: 5px;
+    box-shadow: 5px 5px rgba(134, 134, 134, 0.3)
 }
 
 .mobile > ul > li:hover {
@@ -119,6 +121,7 @@ div:not(.mobile) #signup {
     border: none;
     border-radius: 3px;
     padding: 10px;
+    cursor: pointer;
 }
 
  .logo {
@@ -132,8 +135,11 @@ div:not(.mobile) #signup {
 
 .dropdown {
     display: none;
-    
-} */
+}
+
+.display {
+    display: block;
+}
 
 
 @media only screen and (max-width: 375px) {

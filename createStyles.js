@@ -22,15 +22,15 @@ function applyMenuStyleRules(sheet) {
     sheet.insertRule('.menu {animation: menuMove 1s 1;}');
     sheet.insertRule('.menu > ul > li > a:hover:not(#signup) {border-bottom: 2px solid white; }');
     sheet.insertRule('.menu > ul > li {display: inline-flex; margin: 0 15px;}');
-    sheet.insertRule('.selected {border-bottom: 2px solid white;}');
-    sheet.insertRule('#signup {background-color: white; color: rgb(18, 60, 204); padding: 7px 20px; border-radius: 4px;}');
+    sheet.insertRule('div:not(.mobile) .selected {border-bottom: 2px solid white;}');
+    sheet.insertRule('div:not(.mobile) #signup  {background-color: white; color: rgb(18, 60, 204); padding: 7px 20px; border-radius: 4px;}');
     sheet.insertRule(' .logo {float: left; width: 40px;}');
     sheet.insertRule('.logo > img {cursor: pointer;}');
     sheet.insertRule('.navbar {text-align: center; margin: 0 auto;}')
 }
 
 function applyMobileMenuStyleRules(sheet) {
-    sheet.insertRule('.mobile > ul > li > a {text-decoration: none; color: rgb(18, 60, 204);}');
+    sheet.insertRule('.mobile > ul > li > a {text-decoration: none; color: rgb(18, 60, 204); }');
     sheet.insertRule('.mobile > ul > li {display: block; padding: 8px; border-radius: 5px; background-color: rgb(224, 224, 224);  margin: 2px 0; box-shadow: 5px 5px rgba(134, 134, 134, 0.3)}');
     sheet.insertRule('.mobile > ul > li:hover {background-color: #efefef}');
     sheet.insertRule('.mobile > ul {position: absolute; padding: 0; border-radius: 5px;}');
