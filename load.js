@@ -54,7 +54,7 @@ function initJSON() {
     loadJSON(function(res) {
         recurseJSON(JSON.parse(res), document.body);
         addMenuEventHandlers();
-        textSlider();
+        addDotsEventHandlers();
     });
 }
 
@@ -73,11 +73,18 @@ function addMenuEventHandlers() {
 
 
 //Slider 
-function textSlider() {
+function addDotsEventHandlers() {
     let dots = document.getElementsByClassName('dot');
     for(let i = 0; i < 4; i++){
-        dots[i].addEventListener('click', function(){
-            this.classList.add('selected-dot');
+        dots[i].addEventListener('click', function() {
+            markDotAsSelected(this, dots);
         })
     }
+}
+
+function markDotAsSelected(selectedDot, allDots) {
+    for (let dot of allDots) {
+        dot.classList.remove('selected-dot');
+    }
+    selectedDot.classList.add('selected-dot');
 }

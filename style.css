@@ -1,5 +1,5 @@
 body {
-    background-image: url("./image.png"), linear-gradient(127deg, rgb(18, 60, 204) 60%, rgb(217, 36, 48) 60%) ;
+    background-image: url("./image.png"), linear-gradient(127deg, rgb(18, 60, 204) 60%, rgb(217, 36, 48) 60%);
     color: white;
     background-size: contain;
     background-position: center;
@@ -17,25 +17,21 @@ body {
     animation: menuMove 1s 1;
 }
 
-#signin, #sinup {
-    float: right;
-}
-
-.menu > ul > li > a {
+.menu>ul>li>a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
 
-.menu > ul > li > a:hover:not(#signup) {
-    border-bottom: 2px solid white; 
+.menu>ul>li>a:hover:not(#signup) {
+    border-bottom: 2px solid white;
 }
 
 div:not(.mobile) .selected {
     border-bottom: 2px solid white;
 }
 
-.menu > ul > li {
+.menu>ul>li {
     display: inline-flex;
     margin: 0 15px;
 }
@@ -56,13 +52,13 @@ div:not(.mobile) .selected {
     cursor: pointer;
 }
 
-.mobile > ul {
+.mobile>ul {
     position: absolute;
     padding: 0;
     border-radius: 5px;
 }
 
-.mobile > ul > li {
+.mobile>ul>li {
     display: block;
     background-color: rgb(224, 224, 224);
     padding: 8px;
@@ -71,11 +67,11 @@ div:not(.mobile) .selected {
     box-shadow: 5px 5px rgba(134, 134, 134, 0.3)
 }
 
-.mobile > ul > li:hover {
+.mobile>ul>li:hover {
     background-color: rgb(228, 219, 219)
 }
 
-.mobile > ul > li > a {
+.mobile>ul>li>a {
     text-decoration: none;
     color: rgb(18, 60, 204);
     text-align: center;
@@ -92,7 +88,7 @@ div:not(.mobile) #signup {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-.content > h1 {
+.content>h1 {
     font-weight: 900;
     letter-spacing: 2px;
 }
@@ -100,7 +96,7 @@ div:not(.mobile) #signup {
 .dots {
     text-align: left;
 }
-    
+
 .dot {
     height: 15px;
     width: 15px;
@@ -111,7 +107,8 @@ div:not(.mobile) #signup {
     margin-left: 10px;
     margin-right: 10px;
 }
-.dot:hover, .selected-dot:not(:hover){
+
+.dot:hover, .selected-dot:not(:hover) {
     border: 3px solid rgb(253, 186, 0);
     margin-top: 57px;
     margin-left: 4px;
@@ -121,19 +118,19 @@ div:not(.mobile) #signup {
 .btn {
     margin-top: 50px;
     color: white;
-    background-color:#ff5969;
+    background-color: #ff5969;
     border: none;
     border-radius: 3px;
     padding: 10px;
     cursor: pointer;
 }
 
- .logo {
-     float: left; 
-     width: 40px;
+.logo {
+    float: left;
+    width: 40px;
 }
 
-.logo > img {
+.logo>img {
     cursor: pointer;
 }
 
@@ -145,20 +142,19 @@ div:not(.mobile) #signup {
     display: block;
 }
 
-
 @media only screen and (max-width: 375px) {
     .menu-button {
         display: block;
         padding: 3px 35px;
     }
     .menu {
-            display: none;
+        display: none;
     }
-    .mobile > ul {
+    .mobile>ul {
         margin-top: 45px;
         z-index: 3;
     }
-    .mobile > ul > li {
+    .mobile>ul>li {
         padding: 3px;
     }
     .content {
@@ -168,13 +164,13 @@ div:not(.mobile) #signup {
         position: absolute;
         margin-top: 50px;
     }
-    .content > h1 {
+    .content>h1 {
         font-size: 25px;
     }
     .logo {
         padding-left: 30px;
     }
-    .logo > img {
+    .logo>img {
         width: 110px;
         height: 25px;
         margin-top: 12px;
@@ -184,11 +180,9 @@ div:not(.mobile) #signup {
         width: 70vw;
         margin-top: 30px;
     }
-    
     .dots {
         text-align: center;
     }
-    
     .dot {
         height: 13px;
         width: 13px;
@@ -196,10 +190,10 @@ div:not(.mobile) #signup {
         margin-left: 10px;
         margin-right: 11px;
         display: inline-flex;
-        background-color: #4162d6;       
+        background-color: #4162d6;
         border-radius: 50%;
     }
-    .dot:hover{
+    .dot:hover {
         border: 3px solid rgb(253, 186, 0);
         margin-top: 57px;
         margin-left: 4px;
@@ -208,9 +202,9 @@ div:not(.mobile) #signup {
     body {
         background-image: linear-gradient(127deg, rgb(18, 60, 204) 60%, rgb(217, 36, 48) 60%);
     }
-  }
+}
 
-  @media only screen and (min-width: 376px) {
+@media only screen and (min-width: 376px) {
     .mobile {
         display: block;
     }
@@ -227,13 +221,13 @@ div:not(.mobile) #signup {
         position: absolute;
         margin-top: 50px;
     }
-    .mobile > ul {
+    .mobile>ul {
         z-index: 3;
     }
     .logo {
         padding-left: 20px;
     }
-    .logo > img {
+    .logo>img {
         width: 110px;
         height: 25px;
         margin-left: 10px;
@@ -260,9 +254,9 @@ div:not(.mobile) #signup {
         margin: 0 auto;
         margin-top: 50px;
     }
-  }
+}
 
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .mobile {
         display: none;
     }
@@ -277,38 +271,36 @@ div:not(.mobile) #signup {
         margin-top: 20px;
     }
     body {
-        background-image: url("./image.png"), linear-gradient(127deg, rgb(18, 60, 204) 60%, rgb(217, 36, 48) 60%) ; 
+        background-image: url("./image.png"), linear-gradient(127deg, rgb(18, 60, 204) 60%, rgb(217, 36, 48) 60%);
     }
     #dots {
         text-align: left;
     }
-    .logo > img {
+    .logo>img {
         width: 100px;
         height: 25px;
         margin-left: 30px;
         padding-top: 3px;
     }
     .btn {
-        margin-top: 50px;
         padding: 10px;
         display: inline;
-        width: 20vw; 
+        width: 20vw;
     }
     .dots {
         text-align: left;
     }
 }
 
-
-@media only screen and (min-width: 875px){
+@media only screen and (min-width: 875px) {
     .mobile {
-        display:none;
+        display: none;
     }
     .menu {
         display: block;
         font-size: 14px;
     }
-    .logo > img {
+    .logo>img {
         width: 110px;
         height: 28px;
         margin-left: 30px;
@@ -320,8 +312,7 @@ div:not(.mobile) #signup {
     }
 }
 
-
-  @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     .mobile {
         display: none;
     }
@@ -334,24 +325,19 @@ div:not(.mobile) #signup {
         width: 50%;
         font-size: 1.1em;
     }
-    
-    .logo > img {
+    .logo>img {
         width: 120px;
         height: 30px;
         margin-left: 30px;
         padding-top: 3px;
     }
-  }
+}
 
-  @keyframes menuMove {
-        from{
-            margin-top: -20px;
-        }
-        to{
-            margin-top: 0;
-        }
-  }
-
- 
-
-
+@keyframes menuMove {
+    from {
+        margin-top: -20px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
