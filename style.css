@@ -17,6 +17,10 @@ body {
     animation: menuMove 1s 1;
 }
 
+#signin, #sinup {
+    float: right;
+}
+
 .menu > ul > li > a {
     text-decoration: none;
     color: white;
@@ -38,7 +42,7 @@ div:not(.mobile) .selected {
 
 .mobile {
     display: inline-flex;
-    margin-right: 70px;
+    margin-right: 30px;
     float: right;
 }
 
@@ -46,7 +50,7 @@ div:not(.mobile) .selected {
     color: white;
     background-color: #ff5969;
     border-radius: 5px;
-    padding: 5px 25px;
+    padding: 5px 40px;
     position: relative;
     margin-top: 7px;
     cursor: pointer;
@@ -60,7 +64,7 @@ div:not(.mobile) .selected {
 
 .mobile > ul > li {
     display: block;
-    background-color: rgba(224, 224, 224, 0.876);
+    background-color: rgb(224, 224, 224);
     padding: 8px;
     margin: 2px 0;
     border-radius: 5px;
@@ -93,9 +97,9 @@ div:not(.mobile) #signup {
     letter-spacing: 2px;
 }
 
-#dots {
-        text-align: center;
-    }
+.dots {
+    text-align: left;
+}
     
 .dot {
     height: 15px;
@@ -145,6 +149,7 @@ div:not(.mobile) #signup {
 @media only screen and (max-width: 375px) {
     .menu-button {
         display: block;
+        padding: 3px 35px;
     }
     .menu {
             display: none;
@@ -152,6 +157,9 @@ div:not(.mobile) #signup {
     .mobile > ul {
         margin-top: 45px;
         z-index: 3;
+    }
+    .mobile > ul > li {
+        padding: 3px;
     }
     .content {
         padding-left: 30px;
@@ -175,6 +183,10 @@ div:not(.mobile) #signup {
         padding: 15px;
         width: 70vw;
         margin-top: 30px;
+    }
+    
+    .dots {
+        text-align: center;
     }
     
     .dot {
@@ -216,7 +228,6 @@ div:not(.mobile) #signup {
         margin-top: 50px;
     }
     .mobile > ul {
-        margin-top: 45px;
         z-index: 3;
     }
     .logo {
@@ -227,6 +238,9 @@ div:not(.mobile) #signup {
         height: 25px;
         margin-left: 10px;
         padding-top: 10px;
+    }
+    .dots {
+        text-align: center;
     }
     .dot {
         height: 15px;
@@ -279,6 +293,9 @@ div:not(.mobile) #signup {
         padding: 10px;
         display: inline;
         width: 20vw; 
+    }
+    .dots {
+        text-align: left;
     }
 }
 
