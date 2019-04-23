@@ -178,23 +178,22 @@
             "className": "dots",
             "content": [{
                 "type": "div",
-                "className": "dot selected-dot",
-                "innerHTML": "Nunc dignissim molestie sollicitudin. Donec blandit consectetur metus a tempor. Mauris pellentesque libero at dictum blandit. Curabitur eu varius nisi. Nulla tellus ligula, iaculis non erat sit amet, scelerisque porta odio. Pellentesque est metus, mattis vel metus varius, convallis hendrerit ex. Sed viverra erat at erat rutrum pharetra. Aliquam facilisis, risus quis aliquam bibendum, nulla diam consequat enim, ac mollis arcu lacus lobortis mauris. Phasellus varius ante ac dolor sagittis pretium. Nam vitae tortor non nisl rutrum porta. Duis accumsan lorem non est venenatis dictum. Duis in rutrum mi, in vulputate dui. Ut mollis ligula ac consequat lacinia. Duis a cursus ligula."
+                "className": "dot selected-dot"
             },
             {
                 "type": "div",
                 "className": "dot",
-                "innerHTML": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere odio libero, ac tristique ligula accumsan non. Suspendisse potenti. Aliquam erat volutpat. Aenean nec lacus venenatis, faucibus turpis vitae, ultrices nisi. Suspendisse pellentesque augue non lacus tincidunt consectetur. Integer eu lorem et nulla faucibus iaculis. Quisque odio urna, mollis id elit pretium, vulputate hendrerit odio. Nulla faucibus ipsum id tortor dapibus, id tincidunt quam eleifend. Integer nec nisi odio. Fusce id convallis justo."
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere odio libero, ac tristique ligula accumsan non. Suspendisse potenti. Aliquam erat volutpat. Aenean nec lacus venenatis, faucibus turpis vitae, ultrices nisi. Suspendisse pellentesque augue non lacus tincidunt consectetur. Integer eu lorem et nulla faucibus iaculis. Quisque odio urna, mollis id elit pretium, vulputate hendrerit odio. Nulla faucibus ipsum id tortor dapibus, id tincidunt quam eleifend. Integer nec nisi odio. Fusce id convallis justo."
             },
             {
                 "type": "div",
                 "className": "dot",
-                "innerHTML": "Integer elementum convallis ligula eu varius. Aliquam at orci ac diam commodo gravida sed vitae diam. Nullam commodo lobortis efficitur. Sed consequat eu arcu sed finibus. Nulla facilisi. Nunc a diam a massa lacinia consectetur eu ut neque. Nunc ornare odio eget ante bibendum, sit amet venenatis quam vehicula."
+                "text": "Integer elementum convallis ligula eu varius. Aliquam at orci ac diam commodo gravida sed vitae diam. Nullam commodo lobortis efficitur. Sed consequat eu arcu sed finibus. Nulla facilisi. Nunc a diam a massa lacinia consectetur eu ut neque. Nunc ornare odio eget ante bibendum, sit amet venenatis quam vehicula."
             },
             {
                 "type": "div",
                 "className": "dot",
-                "innerHTML": "Praesent dapibus vel augue at scelerisque. Pellentesque vulputate augue sodales, fringilla urna eu, tempor velit. Quisque hendrerit quis enim et gravida. Sed at aliquet urna. Sed congue est ut finibus bibendum. Morbi quis ipsum ante. Nam venenatis commodo ornare. Vestibulum nec urna augue. Nullam venenatis est vel viverra porta. Phasellus blandit porta risus, non finibus neque elementum id."
+                "text": "Praesent dapibus vel augue at scelerisque. Pellentesque vulputate augue sodales, fringilla urna eu, tempor velit. Quisque hendrerit quis enim et gravida. Sed at aliquet urna. Sed congue est ut finibus bibendum. Morbi quis ipsum ante. Nam venenatis commodo ornare. Vestibulum nec urna augue. Nullam venenatis est vel viverra porta. Phasellus blandit porta risus, non finibus neque elementum id."
             }]
         }]
     }]  

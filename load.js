@@ -2,7 +2,7 @@
 
 //ADDING JSON
 function getElement(elObject){
-    let element = document.createElement(elObject.type)
+    let element = document.createElement(elObject.type);
     if(elObject.id){
         element.id = elObject.id;
     }
@@ -50,16 +50,17 @@ function loadJSON(callback) {
     req.send(null);  
 }
 
-function initJSON() {
+function loadPage() {
     loadJSON(function(res) {
         recurseJSON(JSON.parse(res), document.body);
-        addMenuEventHandlers();
+        addMobileMenuEventHandlers();
         addDotsEventHandlers();
+        addMenuEventHandlers();
     });
 }
 
 //Mobile Menu
-function addMenuEventHandlers() {
+function addMobileMenuEventHandlers() {
     document.getElementsByClassName('content')[0].addEventListener('click', function(){
         let menuDropdown = document.getElementsByClassName('dropdown')[0];
         menuDropdown.classList.remove('display');
@@ -87,4 +88,21 @@ function markDotAsSelected(selectedDot, allDots) {
         dot.classList.remove('selected-dot');
     }
     selectedDot.classList.add('selected-dot');
+}
+
+//Menu pages
+function addMenuEventHandlers(){
+    let pages = document.getElementsByClassName('menu-link');
+    for(let i = 0; i < 5; i++){
+        pages[i].addEventListener('click', function(){
+            markPageAsSelected(this, pages);
+        })
+    }
+}
+
+function markPageAsSelected(selectedPage, allPages) {
+    for(let page of allPages){
+        page.classList.remove('selected');
+    }
+    selectedPage.classList.add('selected');
 }
