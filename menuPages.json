@@ -147,15 +147,18 @@
                 {
                     "type": "input",
                     "inputType": "text",
+                    "className": "signinForm",
                     "placeholder": "Name"
                 },
                 {
                     "type": "input",
                     "inputType": "email",
+                    "className": "signinForm",
                     "placeholder": "Email"
                 },
                 {
                     "type": "input",
+                    "id": "signinButton",
                     "inputType": "submit",
                     "value": "Submit"
                 }
@@ -175,17 +178,20 @@
                 },
                 {
                     "type": "input",
+                    "className": "signupForm",
                     "inputType": "text",
                     "placeholder": "Name"
                 },
                 {
                     "type": "input",
                     "inputType": "email",
+                    "className": "signupForm",
                     "placeholder": "Email"
                 },
                 {
                     "type": "input",
                     "inputType": "submit",
+                    "id": "signupButton",
                     "value": "Submit"
                 }
             ]

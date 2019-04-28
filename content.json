@@ -30,8 +30,7 @@
                       {
                         "type": "a",
                         "href": "#",
-                        "className": "menu-link",
-                        "id": "selected",
+                        "className": "menu-link selected",
                         "innerHTML": "Home"
                       }
                     ]
@@ -68,30 +67,30 @@
                         "innerHTML": "Pricing"
                       }
                     ]
-                  },
+                  }
+                ]
+              },
+              {
+                "type": "span",
+                "content": [
                   {
-                    "type": "li",
-                    "content": [
-                      {
-                        "type": "a",
-                        "href": "#",
-                        "className": "menu-link",
-                        "innerHTML": "SIGNIN",
-                        "id": "signin"
-                      }
-                    ]
-                  },
+                    "type": "a",
+                    "href": "#",
+                    "className": "menu-link menu-right",
+                    "innerHTML": "SIGNIN",
+                    "id": "signin"
+                  }
+                ]
+              },
+              {
+                "type": "span",
+                "content": [
                   {
-                    "type": "li",
-                    "content": [
-                      {
-                        "type": "a",
-                        "href": "#",
-                        "className": "menu-link",
-                        "innerHTML": "SIGNUP",
-                        "id": "signup"
-                      }
-                    ]
+                    "type": "a",
+                    "href": "#",
+                    "className": "menu-link menu-right",
+                    "innerHTML": "SIGNUP",
+                    "id": "signup"
                   }
                 ]
               }

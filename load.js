@@ -80,8 +80,8 @@ function loadPage() {
             addMenuEventHandlers(menuContents);
             addButtonEventHandler();
             addLogoEventHandler();
-        }, 'https://api.myjson.com/bins/jcjfw');
-    }, 'https://api.myjson.com/bins/udamc')
+        }, 'https://api.myjson.com/bins/11wff8');
+    }, 'https://api.myjson.com/bins/125fhw')
 
     loadJSON(function(res) {
         createDesignPageContent = JSON.parse(res); 
@@ -169,7 +169,7 @@ function changeHomePageContent(contentIndex) {
 
 function markDotAsSelected(selectedDot, allDots) {
     for (let dot of allDots) {
-        dot.removeAttribute('id');
+        dot.removeAttribute('id', 'selected-dot');
     }
     selectedDot.setAttribute('id', 'selected-dot');
 }
@@ -184,6 +184,8 @@ function addMenuEventHandlers(menuItems){
             }
             //mod needed due to mobile and desktop menu
             changeMenuPage(i % menuItems.length);
+            let menuDropdown = document.getElementsByClassName('dropdown')[0];
+            menuDropdown.classList.remove('display');
         })
     }
 
@@ -191,9 +193,9 @@ function addMenuEventHandlers(menuItems){
 
 function markPageAsSelected(selectedPage, allPages) {
     for(let page of allPages){
-        page.removeAttribute('id');
+        page.classList.remove('selected');
     }
-    selectedPage.setAttribute('id', 'selected');
+    selectedPage.classList.add('selected');
 }
 
 function changeMenuPage(contentIndex) {

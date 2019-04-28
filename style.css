@@ -18,23 +18,34 @@ body {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    margin-top: 15px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu>ul {
+    display: inline;
+    margin-left: 60px;
+}
+
+.menu>span>.menu-right {
+    text-decoration: none;
+    color: white;
+    display: inline;
+    margin: 0 5px;
+    border-bottom: 2px solid transparent;
 }
 
 .menu>ul>li>a:hover:not(#signup) {
     border-bottom: 2px solid white;
 }
 
-div:not(.mobile) #selected {
+div:not(.mobile) .selected {
     border-bottom: 2px solid white;
 }
 
 .menu>ul>li {
     display: inline-flex;
-    margin: 0 15px;
-}
-
-.menu-page {
-    width: 85%;
+    margin: 0 25px;
 }
 
 .mobile {
@@ -83,6 +94,10 @@ div:not(.mobile) #signup {
     color: rgb(18, 60, 204);
     padding: 7px 20px;
     border-radius: 4px;
+}
+
+div:not(.mobile) #signin {
+    margin-left: 50px;
 }
 
 .content {
@@ -142,6 +157,45 @@ div:not(.mobile) #signup {
 
 .display {
     display: block;
+}
+
+.menu-page input{
+    display: block;
+    margin: 8px 0;
+}
+
+#signinButton {
+    background-color: #ff5969;
+    border: none;
+    outline: none;
+    width: 125px;
+    color: white;
+    border-radius: 2px;
+    height: 35px;
+}
+
+#signupButton {
+    background-color: #ff5969;
+    border: none;
+    outline: none;
+    width: 125px;
+    color: white;
+    border-radius: 2px;
+    height: 35px;
+}
+
+.signinForm {
+    width: 250px;
+    height: 30px;
+    border-radius: 3px;
+    padding: 3px 8px;
+}
+
+.signupForm {
+    width: 250px;
+    height: 30px;
+    border-radius: 3px;
+    padding: 3px 8px;
 }
 
 @media only screen and (max-width: 375px) {
@@ -281,7 +335,6 @@ div:not(.mobile) #signup {
         width: 115px;
         height: 25px;
         margin-left: 30px;
-        padding-top: 3px;
     }
     .btn {
         padding: 10px;
@@ -292,7 +345,7 @@ div:not(.mobile) #signup {
     }
 }
 
-@media only screen and (min-width: 875px) {
+@media only screen and (min-width: 850px) {
     .mobile {
         display: none;
     }
@@ -304,7 +357,6 @@ div:not(.mobile) #signup {
         width: 130px;
         height: 28px;
         margin-left: 30px;
-        padding-top: 3px;
     }
     .content {
         font-size: 1em;
@@ -329,7 +381,6 @@ div:not(.mobile) #signup {
         width: 140px;
         height: 30px;
         margin-left: 30px;
-        padding-top: 3px;
     }
 }
 
