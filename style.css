@@ -13,9 +13,6 @@ body {
     margin: 0 auto;
 }
 
-.menu {
-    animation: menuMove 1s 1;
-}
 
 .menu>ul>li>a {
     text-decoration: none;
@@ -27,13 +24,17 @@ body {
     border-bottom: 2px solid white;
 }
 
-div:not(.mobile) .selected {
+div:not(.mobile) #selected {
     border-bottom: 2px solid white;
 }
 
 .menu>ul>li {
     display: inline-flex;
     margin: 0 15px;
+}
+
+.menu-page {
+    width: 85%;
 }
 
 .mobile {
@@ -88,6 +89,7 @@ div:not(.mobile) #signup {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+
 .content>h1 {
     font-weight: 900;
     letter-spacing: 2px;
@@ -108,7 +110,7 @@ div:not(.mobile) #signup {
     margin-right: 10px;
 }
 
-.dot:hover, .selected-dot:not(:hover) {
+.dot:hover, #selected-dot:not(:hover) {
     border: 3px solid rgb(253, 186, 0);
     margin-top: 57px;
     margin-left: 4px;
@@ -171,9 +173,9 @@ div:not(.mobile) #signup {
         padding-left: 30px;
     }
     .logo>img {
-        width: 110px;
+        width: 130px;
         height: 25px;
-        margin-top: 12px;
+        margin-top: 7px;
     }
     .btn {
         padding: 15px;
@@ -228,7 +230,7 @@ div:not(.mobile) #signup {
         padding-left: 20px;
     }
     .logo>img {
-        width: 110px;
+        width: 130px;
         height: 25px;
         margin-left: 10px;
         padding-top: 10px;
@@ -250,7 +252,6 @@ div:not(.mobile) #signup {
         padding: 15px 30px;
         width: 80vw;
         font-size: 1.2em;
-        display: block;
         margin: 0 auto;
         margin-top: 50px;
     }
@@ -277,14 +278,13 @@ div:not(.mobile) #signup {
         text-align: left;
     }
     .logo>img {
-        width: 100px;
+        width: 115px;
         height: 25px;
         margin-left: 30px;
         padding-top: 3px;
     }
     .btn {
         padding: 10px;
-        display: inline;
         width: 20vw;
     }
     .dots {
@@ -301,7 +301,7 @@ div:not(.mobile) #signup {
         font-size: 14px;
     }
     .logo>img {
-        width: 110px;
+        width: 130px;
         height: 28px;
         margin-left: 30px;
         padding-top: 3px;
@@ -326,7 +326,7 @@ div:not(.mobile) #signup {
         font-size: 1.1em;
     }
     .logo>img {
-        width: 120px;
+        width: 140px;
         height: 30px;
         margin-left: 30px;
         padding-top: 3px;

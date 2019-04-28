@@ -1,200 +1,251 @@
-{   
+{
     "type": "div",
     "className": "container",
-    "content":[{
+    "content": [
+      {
         "type": "header",
         "className": "navbar",
-        "content": [{
+        "content": [
+          {
             "type": "div",
             "className": "logo",
-            "content": [{
+            "content": [
+              {
                 "type": "img",
-                "src": "./logo.jpg"
-            }]
-        },
-        {
+                "src": "./logo.png"
+              }
+            ]
+          },
+          {
             "type": "div",
             "className": "menu desktop",
-            "content": [{
+            "content": [
+              {
                 "type": "ul",
                 "className": "desktop-menu",
-                "content": [{
+                "content": [
+                  {
                     "type": "li",
-                    "content": [{
+                    "content": [
+                      {
                         "type": "a",
                         "href": "#",
-                        "className": "menu-link selected",
+                        "className": "menu-link",
+                        "id": "selected",
                         "innerHTML": "Home"
-                    }]
-                },
-                {
+                      }
+                    ]
+                  },
+                  {
                     "type": "li",
-                    "content": [{
+                    "content": [
+                      {
                         "type": "a",
                         "href": "#",
                         "className": "menu-link",
                         "innerHTML": "Products"
-                    }]
-                },
-                {
+                      }
+                    ]
+                  },
+                  {
                     "type": "li",
-                    "content": [{
+                    "content": [
+                      {
                         "type": "a",
                         "href": "#",
                         "className": "menu-link",
                         "innerHTML": "Templates"
-                    }] 
-                },
-                {
+                      }
+                    ]
+                  },
+                  {
                     "type": "li",
-                    "content": [{
+                    "content": [
+                      {
                         "type": "a",
                         "href": "#",
                         "className": "menu-link",
                         "innerHTML": "Pricing"
-                    }] 
-                },
-                {
+                      }
+                    ]
+                  },
+                  {
                     "type": "li",
-                    "content": [{
+                    "content": [
+                      {
                         "type": "a",
                         "href": "#",
-                        "className": "menu-link menu-right",
+                        "className": "menu-link",
                         "innerHTML": "SIGNIN",
                         "id": "signin"
-                    }] 
-                },
-                {
+                      }
+                    ]
+                  },
+                  {
                     "type": "li",
-                    "content": [{
+                    "content": [
+                      {
                         "type": "a",
                         "href": "#",
-                        "className": "menu-link menu-right",
+                        "className": "menu-link",
                         "innerHTML": "SIGNUP",
                         "id": "signup"
-                    }] 
-                }]
-            }]
-        },
-        {
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "type": "div",
             "className": "mobile",
-            "content": [{
+            "content": [
+              {
                 "type": "div",
                 "className": "menu-button",
                 "onclick": "showMenu",
-                "content": [{
+                "content": [
+                  {
                     "type": "i",
                     "className": "fas fa-align-justify"
-                }]
-            },
-            {
+                  }
+                ]
+              },
+              {
                 "type": "ul",
                 "className": "dropdown",
-                "content": [{
+                "content": [
+                  {
                     "type": "li",
-                    "content": [{
+                    "content": [
+                      {
                         "type": "a",
                         "href": "#",
-                        "className": "menu-link",
+                        "className": "menu-link mobile-menu",
                         "innerHTML": "Home"
-                    }]
-                },
-                {
+                      }
+                    ]
+                  },
+                  {
                     "type": "li",
-                    "content": [{
+                    "content": [
+                      {
                         "type": "a",
                         "href": "#",
-                        "className": "menu-link",
+                        "className": "menu-link mobile-menu",
                         "innerHTML": "Products"
-                    }]
-                },
-                {
+                      }
+                    ]
+                  },
+                  {
                     "type": "li",
-                    "content": [{
+                    "content": [
+                      {
                         "type": "a",
                         "href": "#",
-                        "className": "menu-link",
+                        "className": "menu-link mobile-menu",
                         "innerHTML": "Templates"
-                    }] 
-                },
-                {
+                      }
+                    ]
+                  },
+                  {
                     "type": "li",
-                    "content": [{
+                    "content": [
+                      {
                         "type": "a",
                         "href": "#",
-                        "className": "menu-link",
+                        "className": "menu-link mobile-menu",
                         "innerHTML": "Pricing"
-                    }] 
-                },
-                {
+                      }
+                    ]
+                  },
+                  {
                     "type": "li",
-                    "content": [{
+                    "content": [
+                      {
                         "type": "a",
                         "href": "#",
-                        "className": "menu-link menu-right",
+                        "className": "menu-link menu-right mobile-menu",
                         "innerHTML": "SIGNIN"
-                    }] 
-                },
-                {
+                      }
+                    ]
+                  },
+                  {
                     "type": "li",
-                    "content": [{
+                    "content": [
+                      {
                         "type": "a",
                         "href": "#",
-                        "className": "menu-link menu-right",
+                        "className": "menu-link menu-right mobile-menu",
                         "innerHTML": "SIGNUP"
-                    }] 
-                }]
-            }]
-        }]
-    },
-    {
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
         "type": "div",
         "className": "content",
         "id": "menu-content",
-        "content": [{
-            "type": "h1",
-            "innerHTML": "Create Stunning Visual Media"
-        },
-        {
-            "type": "p",
-            "innerHTML": "Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites."
-        },
-        {
-            "type": "p",
-            "innerHTML": "Make your project stand out!"
-        },
-        {
-            "type": "button",
-            "className": "btn",
-            "innerHTML": "Create design ",
-            "content": [{
-                "type": "i",
-                "className": "fas fa-arrow-right"
-            }]
-        },
-        {
+        "content": [
+          {
+            "type": "div",
+            "className": "text",
+            "content": [
+              {
+                "type": "h1",
+                "innerHTML": "Create Stunning Visual Media"
+              },
+              {
+                "type": "p",
+                "innerHTML": "Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites."
+              },
+              {
+                "type": "p",
+                "innerHTML": "Make your project stand out!"
+              },
+              {
+                "type": "button",
+                "className": "btn",
+                "innerHTML": "Create design ",
+                "content": [
+                  {
+                    "type": "i",
+                    "className": "fas fa-arrow-right"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "type": "div",
             "className": "dots",
-            "content": [{
-                "type": "div",
-                "className": "dot selected-dot"
-            },
-            {
+            "content": [
+              {
                 "type": "div",
                 "className": "dot",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere odio libero, ac tristique ligula accumsan non. Suspendisse potenti. Aliquam erat volutpat. Aenean nec lacus venenatis, faucibus turpis vitae, ultrices nisi. Suspendisse pellentesque augue non lacus tincidunt consectetur. Integer eu lorem et nulla faucibus iaculis. Quisque odio urna, mollis id elit pretium, vulputate hendrerit odio. Nulla faucibus ipsum id tortor dapibus, id tincidunt quam eleifend. Integer nec nisi odio. Fusce id convallis justo."
-            },
-            {
+                "id": "selected-dot"
+              },
+              {
                 "type": "div",
-                "className": "dot",
-                "text": "Integer elementum convallis ligula eu varius. Aliquam at orci ac diam commodo gravida sed vitae diam. Nullam commodo lobortis efficitur. Sed consequat eu arcu sed finibus. Nulla facilisi. Nunc a diam a massa lacinia consectetur eu ut neque. Nunc ornare odio eget ante bibendum, sit amet venenatis quam vehicula."
-            },
-            {
+                "className": "dot"
+              },
+              {
                 "type": "div",
-                "className": "dot",
-                "text": "Praesent dapibus vel augue at scelerisque. Pellentesque vulputate augue sodales, fringilla urna eu, tempor velit. Quisque hendrerit quis enim et gravida. Sed at aliquet urna. Sed congue est ut finibus bibendum. Morbi quis ipsum ante. Nam venenatis commodo ornare. Vestibulum nec urna augue. Nullam venenatis est vel viverra porta. Phasellus blandit porta risus, non finibus neque elementum id."
-            }]
-        }]
-    }]  
-}
+                "className": "dot"
+              },
+              {
+                "type": "div",
+                "className": "dot"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

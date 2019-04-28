@@ -1,0 +1,14 @@
+{
+    "type": "div",
+    "className": "create-design",
+    "content": [
+        {
+            "type": "h1",
+            "innerHTML": "Create Your Design"
+        },
+        {
+            "type": "p",
+            "innerHTML": "Etiam volutpat posuere pretium. Sed in consequat nunc, faucibus pellentesque nulla. Proin id volutpat eros. Aenean id mattis risus. Pellentesque eget lorem id nulla aliquet faucibus. Phasellus pulvinar quam quisipsum volutpat, non interdum mauris euismod. Praesent in enim nec turpis cursus semper id finibus erat."
+        }
+    ]
+}

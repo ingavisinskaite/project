@@ -1,0 +1,36 @@
+[
+    [{
+            "type": "h1",
+            "innerHTML": "Create Stunning Visual Media"
+        },
+        {
+            "type": "p",
+            "innerHTML": "Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites."
+        },
+        {
+            "type": "p",
+            "innerHTML": "Make your project stand out!"
+        },
+        {
+            "type": "button",
+            "className": "btn",
+            "innerHTML": "Create design ",
+            "content": [{
+                "type": "i",
+                "className": "fas fa-arrow-right"
+            }]
+        }
+    ],
+    [{
+        "type": "p",
+        "innerHTML": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere odio libero, ac tristique ligula accumsan non. Suspendisse potenti. Aliquam erat volutpat. Aenean nec lacus venenatis, faucibus turpis vitae, ultrices nisi. Suspendisse pellentesque augue non lacus tincidunt consectetur. Integer eu lorem et nulla faucibus iaculis. Quisque odio urna, mollis id elit pretium, vulputate hendrerit odio. Nulla faucibus ipsum id tortor dapibus, id tincidunt quam eleifend. Integer nec nisi odio. Fusce id convallis justo."
+    }],
+    [{
+        "type": "p",
+        "innerHTML": "Integer elementum convallis ligula eu varius. Aliquam at orci ac diam commodo gravida sed vitae diam. Nullam commodo lobortis efficitur. Sed consequat eu arcu sed finibus. Nulla facilisi. Nunc a diam a massa lacinia consectetur eu ut neque. Nunc ornare odio eget ante bibendum, sit amet venenatis quam vehicula."
+    }],
+    [{
+        "type": "p",
+        "innerHTML": "Praesent dapibus vel augue at scelerisque. Pellentesque vulputate augue sodales, fringilla urna eu, tempor velit. Quisque hendrerit quis enim et gravida. Sed at aliquet urna. Sed congue est ut finibus bibendum. Morbi quis ipsum ante. Nam venenatis commodo ornare. Vestibulum nec urna augue. Nullam venenatis est vel viverra porta. Phasellus blandit porta risus, non finibus neque elementum id."
+    }]
+]

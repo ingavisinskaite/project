@@ -1,0 +1,194 @@
+[{
+        "type": "div",
+        "className": "menu-page",
+        "id": "home-page",
+        "content": [{
+                "type": "div",
+                "className": "text",
+                "content": [{
+                        "type": "h1",
+                        "innerHTML": "Create Stunning Visual Media"
+                    },
+                    {
+                        "type": "p",
+                        "innerHTML": "Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites."
+                    },
+                    {
+                        "type": "p",
+                        "innerHTML": "Make your project stand out!"
+                    },
+                    {
+                        "type": "button",
+                        "className": "btn",
+                        "innerHTML": "Create design ",
+                        "content": [{
+                            "type": "i",
+                            "className": "fas fa-arrow-right"
+                        }]
+                    }
+                ]
+            },
+            {
+                "type": "div",
+                "className": "dots",
+                "content": [{
+                        "type": "div",
+                        "className": "dot",
+                        "id": "selected-dot",
+                        "hiddenContent": [{
+                                "type": "h1",
+                                "innerHTML": "Create Stunning Visual Media"
+                            },
+                            {
+                                "type": "p",
+                                "innerHTML": "Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites."
+                            },
+                            {
+                                "type": "p",
+                                "innerHTML": "Make your project stand out!"
+                            },
+                            {
+                                "type": "button",
+                                "className": "btn",
+                                "innerHTML": "Create design ",
+                                "content": [{
+                                    "type": "i",
+                                    "className": "fas fa-arrow-right"
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "div",
+                        "className": "dot",
+                        "hiddenContent": [{
+                            "type": "p",
+                            "innerHTML": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere odio libero, ac tristique ligula accumsan non. Suspendisse potenti. Aliquam erat volutpat. Aenean nec lacus venenatis, faucibus turpis vitae, ultrices nisi. Suspendisse pellentesque augue non lacus tincidunt consectetur. Integer eu lorem et nulla faucibus iaculis. Quisque odio urna, mollis id elit pretium, vulputate hendrerit odio. Nulla faucibus ipsum id tortor dapibus, id tincidunt quam eleifend. Integer nec nisi odio. Fusce id convallis justo."
+                        }]
+                    },
+                    {
+                        "type": "div",
+                        "className": "dot",
+                        "hiddenContent": [{
+                            "type": "p",
+                            "innerHTML": "Integer elementum convallis ligula eu varius. Aliquam at orci ac diam commodo gravida sed vitae diam. Nullam commodo lobortis efficitur. Sed consequat eu arcu sed finibus. Nulla facilisi. Nunc a diam a massa lacinia consectetur eu ut neque. Nunc ornare odio eget ante bibendum, sit amet venenatis quam vehicula."
+                        }]
+                    },
+                    {
+                        "type": "div",
+                        "className": "dot",
+                        "hiddenContent": [{
+                            "type": "p",
+                            "innerHTML": "Praesent dapibus vel augue at scelerisque. Pellentesque vulputate augue sodales, fringilla urna eu, tempor velit. Quisque hendrerit quis enim et gravida. Sed at aliquet urna. Sed congue est ut finibus bibendum. Morbi quis ipsum ante. Nam venenatis commodo ornare. Vestibulum nec urna augue. Nullam venenatis est vel viverra porta. Phasellus blandit porta risus, non finibus neque elementum id."
+                        }]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "div",
+        "class": "menu-page",
+        "content": [{
+                "type": "h1",
+                "innerHTML": "Our products"
+            },
+            {
+                "type": "p",
+                "innerHTML": "Donec porta finibus dolor quis sollicitudin. Fusce ac cursus eros, ut pretium felis. Sed suscipit ex nunc, at facilisis ipsum dapibus in. Nullam nec diam vel mauris varius ullamcorper. Phasellus ac nunc non nequeiaculis lobortis. Sed pulvinar tellus ac congue laoreet. Fusce dolor enim, vestibulum a neque et, tincidunt condimentum nisl. Aliquam ullamcorper, libero a ornare hendrerit, sapien justo mattis dolor, sit ametmolestie ipsum est nec orci. Etiam condimentum elit quis mauris laoreet, vitae volutpat urna viverra. Curabitur et turpis condimentum dolor congue faucibus in id nisl. Pellentesque ut purus tincidunt, laoreet tellus in, aliquet magna. Praesent quam quam, ornare quis felis id, sodales dictum felis. Morbi dui mauris, vulputate nec turpis ac, luctus posuere risus."
+            }
+        ]
+    },
+    {
+        "type": "div",
+        "className": "menu-page",
+        "content": [{
+                "type": "h1",
+                "innerHTML": "Templates"
+            },
+            {
+                "type": "p",
+                "innerHTML": "Mauris ante eros, finibus a dui eget, dictum tristique libero. Aenean sem ligula, iaculis quis eros eget, mollis efficitur sapien. Mauris mattis justo ut dolor mollis, non fringilla libero ultrices. Aenean vellacus sed dui fringilla malesuada mollis nec libero. Etiam purus eros, venenatis id turpis sed, laoreet faucibus ex. In ultrices diam metus, nec vestibulum ex vestibulum vitae. Maecenas augue nisi, tincidunt et faucibus vel, dictum vel lacus. In tempus urna eget leo accumsan, eu dapibus lorem elementum. Phasellus ut feugiat enim. Proin sit amet pellentesque metus."
+            },
+            {
+                "type": "p",
+                "innerHTML": "Duis consectetur congue dolor ac iaculis. Fusce non mauris vel leo elementum gravida sit amet in ipsum. Nuncaugue felis, accumsan at pretium rutrum, mollis a enim. Morbi eget dapibus tortor. Aenean vel pharetraneque. Integer non enim at massa ultrices hendrerit. Donec volutpat augue a luctus tincidunt. Vestibulum blandit, nisi ac cursus tincidunt, ipsum tellus mollis velit, non molestie nulla augue tempor eros. Ut necpretium tortor. Suspendisse commodo sodales pretium. Pellentesque habitant morbi tristique senectus et netuset malesuada fames ac turpis egestas. Nunc eu eleifend justo, sed dapibus libero. Nulla eu arcu ut leomolestie lacinia."
+            }
+        ]
+    },
+    {
+        "type": "div",
+        "className": "menu-page",
+        "content": [{
+                "type": "h1",
+                "innerHTML": "Pricing"
+            },
+            {
+                "type": "p",
+                "innerHTML": "Etiam volutpat posuere pretium. Sed in consequat nunc, faucibus pellentesque nulla. Proin id volutpat eros. Aenean id mattis risus. Pellentesque eget lorem id nulla aliquet faucibus. Phasellus pulvinar quam quisipsum volutpat, non interdum mauris euismod. Praesent in enim nec turpis cursus semper id finibus erat."
+            },
+            {
+                "type": "p",
+                "innerHTML": "Fusce imperdiet iaculis vehicula. Nam euismod, tellus ac faucibus semper, justo mauris pellentesque odio, quis egestas est ligula et nibh. Aliquam varius orci in elit auctor condimentum. Duis interdum et ex euultricies. Nunc finibus dui metus, et suscipit enim posuere vitae. Nam nec erat ac eros aliquet pellentesque. Nullam posuere dapibus lorem, a rutrum metus euismod sed. Fusce turpis leo, consequat atfaucibus interdum, viverra et nisl. Sed consectetur a nunc tempus consectetur. Vestibulum ornare metusneque, egestas venenatis felis auctor non. Nunc posuere malesuada neque, quis maximus nibh luctus ut."
+            }
+        ]
+    },
+    {
+        "type": "div",
+        "className": "menu-page",
+        "content": [{
+            "type": "form",
+            "action": "/",
+            "method": "get",
+            "content": [{
+                    "type": "h1",
+                    "innerHTML": "Sign In"
+                },
+                {
+                    "type": "input",
+                    "inputType": "text",
+                    "placeholder": "Name"
+                },
+                {
+                    "type": "input",
+                    "inputType": "email",
+                    "placeholder": "Email"
+                },
+                {
+                    "type": "input",
+                    "inputType": "submit",
+                    "value": "Submit"
+                }
+            ]
+        }]
+    },
+    {
+        "type": "div",
+        "className": "menu-page",
+        "content": [{
+            "type": "form",
+            "action": "/",
+            "method": "get",
+            "content": [{
+                    "type": "h1",
+                    "innerHTML": "Sign Up"
+                },
+                {
+                    "type": "input",
+                    "inputType": "text",
+                    "placeholder": "Name"
+                },
+                {
+                    "type": "input",
+                    "inputType": "email",
+                    "placeholder": "Email"
+                },
+                {
+                    "type": "input",
+                    "inputType": "submit",
+                    "value": "Submit"
+                }
+            ]
+        }]
+    }
+]
