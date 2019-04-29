@@ -76,11 +76,10 @@ div:not(.mobile) .selected {
     padding: 8px;
     margin: 2px 0;
     border-radius: 5px;
-    box-shadow: 5px 5px rgba(134, 134, 134, 0.3)
 }
 
 .mobile>ul>li:hover {
-    background-color: rgb(228, 219, 219)
+    background-color: white;
 }
 
 .mobile>ul>li>a {
@@ -210,7 +209,11 @@ div:not(.mobile) #signin {
     padding: 3px 8px;
 }
 
-@media only screen and (max-width: 375px) {
+.mobile>ul>li.mobile-menu-selected {
+    background-color: white;
+}
+
+@media only screen and (max-width: 376px) {
     .menu-button {
         display: block;
         padding: 3px 35px;
@@ -249,7 +252,9 @@ div:not(.mobile) #signin {
         margin-top: 30px;
     }
     .dots {
-        text-align: center;
+        position: fixed;
+        top: 330px;
+        left: 28%;
     }
     .dot {
         height: 13px;
@@ -302,7 +307,9 @@ div:not(.mobile) #signin {
         padding-top: 10px;
     }
     .dots {
-        text-align: center;
+        position: fixed;
+        top: 330px;
+        left: 35%;
     }
     .dot {
         height: 15px;
@@ -340,9 +347,6 @@ div:not(.mobile) #signin {
     body {
         background-image: url("./image.png"), linear-gradient(127deg, rgb(18, 60, 204) 60%, rgb(217, 36, 48) 60%);
     }
-    #dots {
-        text-align: left;
-    }
     .logo>img {
         width: 115px;
         height: 25px;
@@ -353,7 +357,9 @@ div:not(.mobile) #signin {
         width: 20vw;
     }
     .dots {
-        text-align: left;
+        position: fixed;
+        top: 372px;
+        left: 10%;
     }
 }
 

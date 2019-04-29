@@ -117,6 +117,7 @@
                 "content": [
                   {
                     "type": "li",
+                    "className": "mobile-menu-selected",
                     "content": [
                       {
                         "type": "a",

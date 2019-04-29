@@ -80,7 +80,7 @@ function loadPage() {
             addMenuEventHandlers(menuContents);
             addButtonEventHandler();
             addLogoEventHandler();
-        }, 'https://api.myjson.com/bins/11wff8');
+        }, 'https://api.myjson.com/bins/9iqmw');
     }, 'https://api.myjson.com/bins/125fhw')
 
     loadJSON(function(res) {
@@ -179,9 +179,7 @@ function addMenuEventHandlers(menuItems){
 
     for(let i = 0; i < menuItems.length * 2; i++){
         pages[i].addEventListener('click', function(){
-            if (!this.classList.contains("mobile-menu")) {
-                markPageAsSelected(this, pages);
-            }
+            markPageAsSelected(this, pages);
             //mod needed due to mobile and desktop menu
             changeMenuPage(i % menuItems.length);
             let menuDropdown = document.getElementsByClassName('dropdown')[0];
@@ -192,10 +190,22 @@ function addMenuEventHandlers(menuItems){
 }
 
 function markPageAsSelected(selectedPage, allPages) {
+    const mobileMenuSelectedClass = 'mobile-menu-selected';
+    const desktopMenuSelectedClass = 'selected';
+
     for(let page of allPages){
-        page.classList.remove('selected');
+        if (selectedPage.classList.contains('mobile-menu')) {
+            page.parentElement.classList.remove(mobileMenuSelectedClass);
+        } else {
+            page.classList.remove(desktopMenuSelectedClass);
+        }
+        
     }
-    selectedPage.classList.add('selected');
+    if (selectedPage.classList.contains('mobile-menu')) {
+        selectedPage.parentElement.classList.add(mobileMenuSelectedClass);
+    } else {
+        selectedPage.classList.add(desktopMenuSelectedClass);
+    }
 }
 
 function changeMenuPage(contentIndex) {
