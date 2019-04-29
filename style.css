@@ -172,6 +172,7 @@ div:not(.mobile) #signin {
     color: white;
     border-radius: 2px;
     height: 35px;
+    cursor: pointer;
 }
 
 #signupButton {
@@ -182,6 +183,7 @@ div:not(.mobile) #signin {
     color: white;
     border-radius: 2px;
     height: 35px;
+    cursor: pointer;
 }
 
 .signinForm {
@@ -189,6 +191,16 @@ div:not(.mobile) #signin {
     height: 30px;
     border-radius: 3px;
     padding: 3px 8px;
+}
+
+.signinForm:focus {
+    border: 3px solid grey;
+    outline: none;
+}
+
+.signupForm:focus {
+    border: 3px solid grey;
+    outline: none;
 }
 
 .signupForm {
